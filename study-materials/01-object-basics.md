@@ -109,6 +109,8 @@ console.log(siswa[key]); // 20 — key-nya dinamis!
 ### Kapan Pakai yang Mana?
 
 ```js
+let siswa = { nama: "Andi", umur: 20, kota: "Jakarta" };
+
 // Dot notation — kalau lo TAU key-nya (hardcoded)
 console.log(siswa.nama); // ✅ simpel, clean
 

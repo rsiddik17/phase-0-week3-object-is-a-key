@@ -113,6 +113,14 @@ let students = [
 ### Loop dan Akses
 
 ```js
+let students = [
+  { nama: "Andi", umur: 20, nilai: 85, kota: "Jakarta" },
+  { nama: "Budi", umur: 22, nilai: 72, kota: "Bandung" },
+  { nama: "Cici", umur: 21, nilai: 95, kota: "Jakarta" },
+  { nama: "Dodi", umur: 23, nilai: 60, kota: "Surabaya" },
+  { nama: "Eka",  umur: 20, nilai: 88, kota: "Jakarta" }
+];
+
 // Cetak semua nama dan nilai
 for (let i = 0; i < students.length; i++) {
   console.log(students[i].nama + ": " + students[i].nilai);
@@ -127,6 +135,14 @@ students.forEach(function(s) {
 ### Filter Array of Objects
 
 ```js
+let students = [
+  { nama: "Andi", umur: 20, nilai: 85, kota: "Jakarta" },
+  { nama: "Budi", umur: 22, nilai: 72, kota: "Bandung" },
+  { nama: "Cici", umur: 21, nilai: 95, kota: "Jakarta" },
+  { nama: "Dodi", umur: 23, nilai: 60, kota: "Surabaya" },
+  { nama: "Eka",  umur: 20, nilai: 88, kota: "Jakarta" }
+];
+
 // Cari siswa dari Jakarta yang nilainya > 80
 let jakartaPintar = students.filter(function(s) {
   return s.kota === "Jakarta" && s.nilai > 80;
@@ -143,6 +159,14 @@ console.log(jakartaPintar);
 ### Map Array of Objects
 
 ```js
+let students = [
+  { nama: "Andi", umur: 20, nilai: 85, kota: "Jakarta" },
+  { nama: "Budi", umur: 22, nilai: 72, kota: "Bandung" },
+  { nama: "Cici", umur: 21, nilai: 95, kota: "Jakarta" },
+  { nama: "Dodi", umur: 23, nilai: 60, kota: "Surabaya" },
+  { nama: "Eka",  umur: 20, nilai: 88, kota: "Jakarta" }
+];
+
 // Ambil nama aja
 let namaSiswa = students.map(function(s) {
   return s.nama;
@@ -167,6 +191,14 @@ console.log(rapor);
 ### Reduce Array of Objects
 
 ```js
+let students = [
+  { nama: "Andi", umur: 20, nilai: 85, kota: "Jakarta" },
+  { nama: "Budi", umur: 22, nilai: 72, kota: "Bandung" },
+  { nama: "Cici", umur: 21, nilai: 95, kota: "Jakarta" },
+  { nama: "Dodi", umur: 23, nilai: 60, kota: "Surabaya" },
+  { nama: "Eka",  umur: 20, nilai: 88, kota: "Jakarta" }
+];
+
 // Hitung rata-rata nilai
 let totalNilai = students.reduce(function(total, s) {
   return total + s.nilai;

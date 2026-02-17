@@ -21,6 +21,8 @@ let ipk = siswa.ipk;
 Destructuring bikin ini jadi **satu baris**:
 
 ```js
+let siswa = { nama: "Andi", umur: 20, kota: "Jakarta", ipk: 3.8 };
+
 // ✅ Clean!
 let { nama, umur, kota, ipk } = siswa;
 console.log(nama); // "Andi"
